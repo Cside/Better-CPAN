@@ -2,7 +2,7 @@
    "background_page": "background.html",
    "content_scripts": [ {
       "css": [ "style.css" ],
-      "js": [ "jquery.min.js", "contentscript.js" ],
+      "js": [ "contentscript.js" ],
       "matches": [ "http://search.cpan.org/*" ],
       "run_at": "document_end"
    } ],
