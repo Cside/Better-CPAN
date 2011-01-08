@@ -1,0 +1,15 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "jquery.min.js", "contentscript.js" ],
+      "matches": [ "http://search.cpan.org/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Better CPAN",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/5fktdxwn/p0Twrdv0uCO8it2ZCp/XiwIUM4JrKI9fuM+bkUKgvnQ4nt1ZwgxBIR+dKJ6m67DaUjxvDqj6Od1vwRlb2ql3YHK4qQjH0x6fWXqRxcpspIyktn/MUVd49mLG447TAtVN+RMtdtxSO3euGY+rFnrclpGN1fTBGxr3QIDAQAB",
+   "name": "Better CPAN",
+   "permissions": [ "http://search.cpan.org/*" ],
+   "update_url": "http://cske.sakura.ne.jp/work/hatebu_chrome/updates.xml",
+   "version": "0.2"
+}
