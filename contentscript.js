@@ -1,7 +1,3 @@
-function c(obj) { console.log(obj); }
-
-function a(obj) { alert(obj); }
-
 Node.prototype.insertAfter = function(node, referenceNode) {
     this.insertBefore(node, referenceNode.nextSibling);
 };
@@ -9,7 +5,7 @@ Node.prototype.insertAfter = function(node, referenceNode) {
 function getBugInfo(url, callback) {
     var testResults;
     var reportBugs;
-	chrome.extension.sendRequest(url, function onSuccess(res) {
+    chrome.extension.sendRequest(url, function onSuccess(res) {
         var tmp = document.createElement('div');
         tmp.innerHTML = res;
 
@@ -27,7 +23,7 @@ function getBugInfo(url, callback) {
         });
         var result = { 'testResults': testResults, 'reportBugs' : reportBugs };
         callback(result);
-	});
+    });
 }
 
 function checkYear(date) {
