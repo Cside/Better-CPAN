@@ -68,7 +68,7 @@ function checkYear(date) {
                 row4.appendChild(document.createTextNode(result.testResults));
                 row4.appendChild(document.createTextNode(' - '));
                 row4.appendChild(document.createTextNode(result.reportBugs));
-                row4.innerHTML = row4.textContent.replace(/\((.{1,3})\)/g, '(<b>$1</b>)');
+                row4.innerHTML = row4.textContent.replace(/\((\d+)\)/g, '(<b>$1</b>)');
                 row4.style.backgroundColor = '#ffffe5';
             });
         }
